@@ -1,4 +1,4 @@
-package com.example.Amazon.s3.image.strorage.AmazonStorage;
+package com.example.Amazon.s3.image.strorage.AmazonStorage.Amazons3configuration;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class StorageConfig {
-    @Value("${aws.accessKeyId}")
+    @Value("${aws.accessKey}")
     private String accessKey;
 
-    @Value("${aws.secretAccessKey}")
+    @Value("${aws.secretKey}")
     private String accessSecret;
 
     @Value("${aws.region}")
